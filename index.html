@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>조성범 이력서·포트폴리오</title>
+<meta name="description" content="건축공학을 전공한 개발자 조성범의 이력서와 포트폴리오. BIM 자동화(C#/.NET), AI 에이전트·MCP, 온디바이스 AI.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="조성범 이력서·포트폴리오">
+<meta property="og:description" content="건축을 아는 개발자. BIM 자동화와 AI 에이전트를 함께 만듭니다.">
+<meta property="og:url" content="https://funnyjoe0317.github.io/">
+<meta property="og:locale" content="ko_KR">
+<link rel="canonical" href="https://funnyjoe0317.github.io/">
+<meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1a33" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='6'%20fill='%232346c4'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='8'%20fill='none'%20stroke='white'%20stroke-width='2.4'/%3E%3Cpath%20d='M16%204v24M4%2016h24'%20stroke='white'%20stroke-width='1.4'%20opacity='.6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<script>
+  try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+<style>
+/* Layout: 도면 한 장. 맨 위는 표제란(title block)이 붙은 개요, 섹션 제목은 도면의 뷰 제목(굵은 선 + 가는 선)과 주기,
+   경력 기간은 치수선 길이로 비례 표시. 본문 폭 1080px, 휴대폰에서는 한 줄. 밝은 화면은 트레이싱지, 어두운 화면은 청사진. */
+:root {
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --ink: #141a26;
+  --ink-2: #3b4456;
+  --muted: #5d6679;
+  --line: #dce1e9;
+  --line-2: #b6bfce;
+  --grid: rgba(35, 70, 196, .06);
+  --grid-2: rgba(35, 70, 196, .11);
+  --accent: #2346c4;
+  --accent-soft: #e8edfb;
+  --on-accent: #ffffff;
+  --ok: #1d7a4b;
+  --ok-soft: #e2f2e9;
+  --wip: #925700;
+  --wip-soft: #f8edd9;
+  --img-bg: #ffffff;
+
+  --font-body: "IBM Plex Sans KR", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", monospace;
+
+  --fs-xs: .78rem;
+  --fs-sm: .9rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.375rem;
+  --fs-2xl: 1.75rem;
+  --fs-3xl: clamp(2.5rem, 7vw, 3.75rem);
+
+  --radius: 4px;
+  --wrap: 1080px;
+  --gutter: 20px;
+  --label-col: 230px;
+  --per-month: 7px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1a33;
+    --surface: #10233f;
+    --ink: #e8eef8;
+    --ink-2: #c3cfe2;
+    --muted: #8fa2c1;
+    --line: rgba(196, 214, 245, .16);
+    --line-2: rgba(196, 214, 245, .34);
+    --grid: rgba(150, 190, 255, .07);
+    --grid-2: rgba(150, 190, 255, .13);
+    --accent: #8db8ff;
+    --accent-soft: rgba(141, 184, 255, .14);
+    --on-accent: #0b1a33;
+    --ok: #82d7a7;
+    --ok-soft: rgba(130, 215, 167, .14);
+    --wip: #f0c36d;
+    --wip-soft: rgba(240, 195, 109, .15);
+    --img-bg: #e9eef7;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1a33;
+  --surface: #10233f;
+  --ink: #e8eef8;
+  --ink-2: #c3cfe2;
+  --muted: #8fa2c1;
+  --line: rgba(196, 214, 245, .16);
+  --line-2: rgba(196, 214, 245, .34);
+  --grid: rgba(150, 190, 255, .07);
+  --grid-2: rgba(150, 190, 255, .13);
+  --accent: #8db8ff;
+  --accent-soft: rgba(141, 184, 255, .14);
+  --on-accent: #0b1a33;
+  --ok: #82d7a7;
+  --ok-soft: rgba(130, 215, 167, .14);
+  --wip: #f0c36d;
+  --wip-soft: rgba(240, 195, 109, .15);
+  --img-bg: #e9eef7;
+  color-scheme: dark;
+}
+@media (min-width: 720px) { :root { --gutter: 32px; } }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 76px; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  line-height: 1.7;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg); }
+img { max-width: 100%; height: auto; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3, h4 { text-wrap: balance; }
+p { margin: 0; }
+code { font-family: var(--font-mono); font-size: .86em; overflow-wrap: anywhere; }
+.sr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 50; padding: 8px 12px; border-radius: var(--radius); background: var(--accent); color: var(--on-accent); }
+.skip:focus { top: calc(env(safe-area-inset-top, 0px) + 8px); }
+
+.wrap {
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
+}
+
+/* ---------- 상단 막대 ---------- */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
+@supports (background: color-mix(in srgb, red 50%, transparent)) and ((backdrop-filter: blur(4px)) or (-webkit-backdrop-filter: blur(4px))) {
+  .topbar { background: color-mix(in srgb, var(--bg) 86%, transparent); -webkit-backdrop-filter: blur(10px) saturate(1.3); backdrop-filter: blur(10px) saturate(1.3); }
+}
+.topbar .wrap { display: flex; align-items: center; gap: 12px 20px; min-height: 56px; }
+.brand { display: flex; align-items: baseline; gap: 8px; flex: none; color: var(--ink); font-weight: 700; text-decoration: none; white-space: nowrap; }
+.brand small { font-family: var(--font-mono); font-size: var(--fs-xs); font-weight: 400; color: var(--muted); }
+.nav { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+.nav::-webkit-scrollbar { display: none; }
+.nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 2px; }
+.nav a { display: block; padding: 6px 10px; border-radius: var(--radius); color: var(--ink-2); font-size: var(--fs-sm); text-decoration: none; white-space: nowrap; }
+.nav a:hover { color: var(--accent); }
+.nav a.active { color: var(--accent); background: var(--accent-soft); }
+.nav a:focus-visible { outline-offset: -2px; }
+.tools { display: flex; gap: 6px; flex: none; }
+.tool-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  height: 34px; padding: 0 10px;
+  border: 1px solid var(--line-2); border-radius: var(--radius);
+  background: var(--surface); color: var(--ink-2);
+  font: 500 var(--fs-xs)/1 var(--font-body); cursor: pointer;
+}
+.tool-btn:hover { color: var(--accent); border-color: var(--accent); }
+.tool-btn svg { width: 16px; height: 16px; }
+@media (max-width: 640px) {
+  .brand small, .tool-btn .label { display: none; }
+  .tool-btn { width: 34px; padding: 0; }
+}
+
+/* ---------- 첫 화면 ---------- */
+.hero { position: relative; border-bottom: 1px solid var(--line); overflow: hidden; }
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(var(--grid-2) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-2) 1px, transparent 1px),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+.hero-grid { position: relative; display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 40px 56px; align-items: end; padding-block: 64px 56px; }
+.eyebrow { margin-bottom: 18px; font-size: var(--fs-sm); color: var(--muted); letter-spacing: .02em; }
+.name { margin: 0; font-size: var(--fs-3xl); line-height: 1.05; font-weight: 700; letter-spacing: -.02em; }
+.name-en { display: block; margin-top: 10px; font-family: var(--font-mono); font-size: var(--fs-sm); font-weight: 400; letter-spacing: .04em; color: var(--muted); }
+.thesis { margin-top: 26px; font-size: clamp(1.3rem, 3vw, 1.75rem); line-height: 1.45; font-weight: 600; letter-spacing: -.01em; text-wrap: balance; }
+.intro { margin-top: 14px; max-width: 36em; color: var(--ink-2); }
+.hero-actions { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 8px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; max-width: 100%;
+  min-height: 40px; padding: 8px 14px;
+  border: 1px solid var(--line-2); border-radius: var(--radius);
+  background: var(--surface); color: var(--ink);
+  font: 500 var(--fs-sm)/1.25 var(--font-body); text-decoration: none; cursor: pointer;
+}
+.btn svg { width: 16px; height: 16px; flex: none; }
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { color: var(--on-accent); filter: brightness(1.08); }
+.btn .mono { font-family: var(--font-mono); font-size: .86rem; overflow-wrap: anywhere; }
+
+/* 표제란 */
+.titleblock { background: var(--surface); border: 2px solid var(--ink); font-size: var(--fs-sm); }
+.tb-caption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; padding: 7px 12px; border-bottom: 2px solid var(--ink); font-family: var(--font-mono); font-size: var(--fs-xs); letter-spacing: .04em; color: var(--ink-2); }
+.tb { margin: 0; }
+.tb > div { display: grid; grid-template-columns: 88px minmax(0, 1fr); border-top: 1px solid var(--line-2); }
+.tb > div:first-child { border-top: 0; }
+.tb dt { padding: 10px 12px; border-right: 1px solid var(--line-2); color: var(--muted); font-size: var(--fs-xs); line-height: 1.6; }
+.tb dd { margin: 0; min-width: 0; padding: 9px 12px; font-weight: 500; line-height: 1.5; }
+.tb dd small { display: block; margin-top: 2px; color: var(--ink-2); font-size: var(--fs-xs); font-weight: 400; line-height: 1.55; }
+.tb dd a { color: inherit; }
+
+/* ---------- 섹션 공통 ---------- */
+.section { padding-block: 64px 24px; }
+main > .section:last-child { padding-bottom: 72px; }
+.view-title { position: relative; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding-bottom: 10px; margin-bottom: 34px; border-bottom: 2px solid var(--ink); }
+.view-title::after { content: ""; position: absolute; left: 0; right: 0; bottom: -7px; border-bottom: 1px solid var(--ink); }
+.view-title h2 { margin: 0; font-size: var(--fs-2xl); line-height: 1.25; font-weight: 700; letter-spacing: -.01em; }
+.view-en { font-family: var(--font-mono); font-size: var(--fs-xs); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.view-note { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-left: auto; font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--ink-2); }
+
+.meta { display: flex; flex-wrap: wrap; font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--muted); font-variant-numeric: tabular-nums; }
+.meta span + span::before { content: "·"; margin-inline: 8px; color: var(--line-2); }
+
+.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.tags li { padding: 2px 8px; border: 1px solid var(--line-2); border-radius: 2px; font-family: var(--font-mono); font-size: .74rem; line-height: 1.6; color: var(--ink-2); }
+
+.bullets { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.bullets li { position: relative; padding-left: 18px; color: var(--ink-2); font-size: var(--fs-sm); line-height: 1.65; }
+.bullets li::before { content: ""; position: absolute; left: 2px; top: .82em; width: 8px; border-top: 1.5px solid var(--ink-2); }
+.bullets b { color: var(--ink); font-weight: 600; }
+
+.chip { display: inline-block; padding: 3px 7px; border-radius: 999px; font-size: .72rem; font-weight: 600; line-height: 1.2; white-space: nowrap; vertical-align: 1px; }
+.chip.ok { color: var(--ok); background: var(--ok-soft); }
+.chip.run { color: var(--accent); background: var(--accent-soft); }
+.chip.wip { color: var(--wip); background: var(--wip-soft); }
+.nb { white-space: nowrap; }
+
+.more { font-size: var(--fs-sm); font-weight: 500; text-decoration: none; }
+.more::after { content: " →"; }
+
+/* ---------- 핵심 역량 ---------- */
+.strengths { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+.strength { display: flex; flex-direction: column; gap: 8px; min-width: 0; padding-top: 14px; border-top: 2px solid var(--ink); }
+.strength svg { width: 26px; height: 26px; color: var(--accent); }
+.strength h3 { margin: 0; font-size: var(--fs-lg); font-weight: 700; }
+.strength p { color: var(--ink-2); font-size: var(--fs-sm); }
+.strength .more { margin-top: auto; padding-top: 4px; }
+
+/* ---------- 경력 ---------- */
+.timeline { list-style: none; margin: 0; padding: 0; }
+.job { display: grid; grid-template-columns: var(--label-col) minmax(0, 1fr); gap: 10px 36px; padding-block: 30px; border-top: 1px solid var(--line); }
+.job:first-child { padding-top: 0; border-top: 0; }
+.when { font-family: var(--font-mono); font-size: var(--fs-sm); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.dim { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.dim i { position: relative; display: block; flex: none; width: calc(var(--m) * var(--per-month)); height: 9px; border-left: 1px solid var(--ink-2); border-right: 1px solid var(--ink-2); }
+.dim i::before { content: ""; position: absolute; left: 0; right: 0; top: 4px; border-top: 1px solid var(--ink-2); }
+.dim.open i { border-right: 0; }
+.dim.open i::before { border-top-style: dashed; }
+.dim span { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--muted); white-space: nowrap; }
+.job-body { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.job h3 { margin: 0; font-size: var(--fs-xl); line-height: 1.35; font-weight: 700; }
+.org-en { margin-left: 6px; font-family: var(--font-mono); font-size: var(--fs-xs); font-weight: 400; letter-spacing: .04em; color: var(--muted); }
+.role { margin-top: 2px; color: var(--accent); font-size: var(--fs-sm); font-weight: 600; }
+.summary { max-width: 46em; color: var(--ink-2); }
+.proj-links { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--fs-sm); }
+.proj-links a { font-weight: 500; text-decoration: none; }
+.proj-links a::before { content: "↘ "; color: var(--muted); }
+
+/* ---------- 프로젝트 ---------- */
+.stack { display: flex; flex-direction: column; gap: 18px; }
+.feature { display: grid; gap: 26px; padding: clamp(20px, 3.2vw, 34px); background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--radius); }
+.feature h3 { margin: 6px 0 4px; font-size: clamp(1.6rem, 4vw, 2.1rem); line-height: 1.2; font-weight: 700; letter-spacing: -.01em; }
+.feature-sub { color: var(--ink-2); font-size: var(--fs-lg); }
+.pipeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px; }
+.step { position: relative; display: flex; flex-direction: column; gap: 4px; min-width: 0; padding: 12px 14px; background: var(--bg); border: 1px solid var(--line-2); }
+.step.llm { background: var(--accent-soft); border: 1px dashed var(--accent); }
+.step:not(:last-child)::after { content: "→"; position: absolute; right: -19px; top: 50%; transform: translateY(-50%); font-family: var(--font-mono); font-size: 14px; color: var(--muted); }
+/* 1단계(Parser)와 2단계(Interpreter)는 따로 돌고, 둘의 결과를 3단계(Validator)가 함께 받는다 */
+.pipeline .step:first-child::after { content: "+"; }
+.step-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 8px; }
+.step-no { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--muted); }
+.step-head b { font-size: var(--fs-md); }
+.step-tag { margin-left: auto; font-family: var(--font-mono); font-size: .68rem; font-style: normal; color: var(--muted); }
+.step.llm .step-tag { color: var(--accent); font-weight: 500; }
+.step-desc { font-size: var(--fs-sm); line-height: 1.45; color: var(--ink-2); }
+.step code { font-size: .72rem; color: var(--muted); }
+.pipeline-note { margin-top: -12px; font-size: var(--fs-sm); color: var(--ink-2); }
+.feature-body { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 28px 40px; align-items: start; }
+.feature-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.figures { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--line-2); }
+.figures > div { padding: 14px 16px; border-top: 1px solid var(--line-2); }
+.figures > div:nth-child(-n+2) { border-top: 0; }
+.figures > div:nth-child(even) { border-left: 1px solid var(--line-2); }
+.figures dt { color: var(--muted); font-size: var(--fs-xs); }
+.figures dd { margin: 2px 0 0; font-size: 2rem; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.tool-list { font-size: var(--fs-xs); color: var(--muted); line-height: 1.8; }
+.tool-list code { font-size: .74rem; color: var(--ink-2); }
+.feature-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding-top: 18px; border-top: 1px solid var(--line); }
+
+.group-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin: 34px 0 0; font-size: var(--fs-lg); font-weight: 700; }
+.group-title span { font-family: var(--font-mono); font-size: var(--fs-xs); font-weight: 400; color: var(--muted); }
+
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 12px; min-width: 0; padding: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.card h4 { margin: 0; font-size: var(--fs-lg); line-height: 1.4; font-weight: 700; }
+.card .sub { color: var(--ink-2); font-size: var(--fs-sm); }
+.card-wide { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 20px 32px; align-items: start; }
+.card-text { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.card-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.card-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-top: auto; padding-top: 4px; }
+.ext-link { font-size: var(--fs-sm); font-weight: 500; text-decoration: none; white-space: nowrap; }
+.ext-link::after { content: " ↗"; }
+
+.results { margin: 0; border-top: 1px solid var(--line); }
+.results > div { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 2px 16px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.results dt { color: var(--muted); font-size: var(--fs-xs); }
+.results dd { margin: 0; font-size: var(--fs-sm); font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+.results dd small { margin-left: 6px; color: var(--accent); font-size: var(--fs-xs); font-weight: 700; }
+
+figure { margin: 0; }
+figure a { display: block; }
+figure img { display: block; width: 100%; height: auto; background: var(--img-bg); border: 1px solid var(--line); }
+figcaption { margin-top: 8px; color: var(--muted); font-size: var(--fs-xs); line-height: 1.55; }
+
+.rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.rows li { display: grid; grid-template-columns: var(--label-col) minmax(0, 1fr); gap: 4px 36px; padding-block: 16px; border-bottom: 1px solid var(--line); }
+.rows .when { font-size: var(--fs-xs); }
+.rows b { display: block; font-weight: 600; }
+.rows p { color: var(--ink-2); font-size: var(--fs-sm); }
+
+/* ---------- 기술 ---------- */
+.skills { columns: 3 250px; column-gap: 40px; }
+.skill-group { break-inside: avoid; margin-bottom: 28px; }
+.skill-group h3 { margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line-2); font-size: var(--fs-md); font-weight: 700; }
+.skill-group ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.skill-group li { display: flex; align-items: baseline; gap: 10px; color: var(--ink-2); font-size: var(--fs-sm); }
+.lv { display: inline-block; flex: none; width: 10px; height: 10px; border: 1.5px solid var(--accent); border-radius: 50%; transform: translateY(1px); }
+.lv3 { background: var(--accent); }
+.lv2 { background: linear-gradient(90deg, var(--accent) 50%, transparent 50%); }
+@media (forced-colors: active) {
+  .chip { border: 1px solid CanvasText; }
+  .lv { forced-color-adjust: none; border-color: CanvasText; background: Canvas; }
+  .lv3 { background: CanvasText; }
+  .lv2 { background: linear-gradient(90deg, CanvasText 50%, Canvas 50%); }
+}
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+
+/* ---------- 논문·특허 ---------- */
+.pubs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 24px; }
+.pubs li { display: flex; flex-direction: column; gap: 6px; min-width: 0; padding-top: 12px; border-top: 2px solid var(--ink); }
+.pub-kind { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--accent); }
+.pub-title { font-weight: 600; line-height: 1.5; }
+.pub-venue { color: var(--muted); font-size: var(--fs-sm); }
+
+/* ---------- 연락 ---------- */
+.site-footer { background: var(--surface); border-top: 2px solid var(--ink); }
+.footer-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 24px 48px; align-items: start; padding-block: 44px 40px; }
+.site-footer h2 { margin: 0 0 8px; font-size: var(--fs-xl); }
+.site-footer p { color: var(--ink-2); }
+.contact { margin: 0; border-top: 1px solid var(--line-2); }
+.contact > div { display: grid; grid-template-columns: 88px minmax(0, 1fr); align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line-2); }
+.contact dt { color: var(--muted); font-size: var(--fs-xs); }
+.contact dd { margin: 0; min-width: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font-family: var(--font-mono); font-size: var(--fs-sm); }
+.contact dd a { overflow-wrap: anywhere; }
+.copy-btn { height: 28px; padding: 0 10px; border: 1px solid var(--line-2); border-radius: var(--radius); background: var(--bg); color: var(--ink-2); font: 500 var(--fs-xs)/1 var(--font-body); cursor: pointer; }
+.copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+.colophon { grid-column: 1 / -1; font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--muted); }
+
+/* ---------- 좁은 화면 ---------- */
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); padding-block: 44px 40px; }
+  .strengths { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .feature-body, .card-wide { grid-template-columns: minmax(0, 1fr); }
+  .pipeline { grid-template-columns: minmax(0, 1fr); }
+  .step:not(:last-child)::after { content: "↓"; right: auto; left: 18px; top: auto; bottom: -21px; transform: none; }
+}
+@media (max-width: 860px) {
+  .pubs { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  .cards, .footer-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 720px) {
+  .section { padding-block: 44px 12px; }
+  .job, .rows li { grid-template-columns: minmax(0, 1fr); }
+  .job { padding-block: 24px; }
+}
+@media (max-width: 560px) {
+  .strengths { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .view-note { margin-left: 0; flex-basis: 100%; }
+  .card { padding: 18px; }
+}
+
+/* ---------- 인쇄(PDF) ---------- */
+@page { size: A4; margin: 13mm 12mm 14mm; }
+@media print {
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --ink: #111722;
+    --ink-2: #333c4d;
+    --muted: #5d6679;
+    --line: #d9dee6;
+    --line-2: #aab3c2;
+    --grid: transparent;
+    --grid-2: transparent;
+    --accent: #2346c4;
+    --accent-soft: #eef2fc;
+    --on-accent: #ffffff;
+    --ok: #1d7a4b;
+    --ok-soft: #e2f2e9;
+    --wip: #925700;
+    --wip-soft: #f8edd9;
+    --img-bg: #ffffff;
+    --gutter: 0px;
+    --label-col: 40mm;
+    --per-month: 4px;
+    color-scheme: light;
+  }
+  html { font-size: 9.4pt; }
+  body::before, .topbar, .skip, .tools, .copy-btn, .hero::before { display: none !important; }
+  .wrap { max-width: none; }
+  .hero { border-bottom: 0; }
+  .hero-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 12pt 20pt; padding-block: 0 10pt; }
+  .thesis { margin-top: 12pt; }
+  .hero-actions { margin-top: 12pt; }
+  .btn { min-height: 0; padding: 0; border: 0; background: none; color: var(--ink); }
+  .btn svg { display: none; }
+  .section { padding-block: 14pt 2pt; }
+  main > .section:last-child { padding-bottom: 2pt; }
+  .view-title { margin-bottom: 14pt; break-after: avoid; }
+  .group-title { break-after: avoid; }
+  .strengths { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10pt 18pt; }
+  .job { grid-template-columns: var(--label-col) minmax(0, 1fr); padding-block: 12pt; }
+  .rows li { grid-template-columns: var(--label-col) minmax(0, 1fr); padding-block: 8pt; }
+  .pipeline { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14pt; }
+  .step:not(:last-child)::after { content: "→"; right: -12pt; left: auto; top: 50%; bottom: auto; transform: translateY(-50%); }
+  .feature-body { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8pt; }
+  .card-wide { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .card, .feature { padding: 10pt; }
+  .pubs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .footer-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); padding-block: 12pt 0; }
+  .card, .feature, .strength, .skill-group, .pubs li, .rows li, .bullets li, .job header, figure, .step, .figures { break-inside: avoid; }
+  .job header { break-after: avoid; }
+  figure img { width: auto; max-height: 44mm; }
+  a { color: var(--ink); text-decoration: none; }
+  .ext-link::after { content: " " attr(href); font-family: var(--font-mono); font-size: 7.5pt; color: var(--muted); }
+  .site-footer { background: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">조성범 <small lang="en">Cho Sungbum</small></a>
+    <nav class="nav" aria-label="섹션">
+      <ul>
+        <li><a href="#strengths">역량</a></li>
+        <li><a href="#experience">경력</a></li>
+        <li><a href="#projects">프로젝트</a></li>
+        <li><a href="#skills">기술</a></li>
+        <li><a href="#publications">논문·특허</a></li>
+        <li><a href="#education">학력</a></li>
+        <li><a href="#contact">연락</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <button class="tool-btn" type="button" id="themeBtn" aria-pressed="false" aria-label="어두운 화면(청사진)" title="어두운 화면(청사진)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" stroke="none"/></svg>
+        <span class="label">화면</span>
+      </button>
+      <button class="tool-btn" type="button" id="printBtn" aria-label="인쇄·PDF 저장">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M7 8V3h10v5"/><path d="M7 17H4v-8h16v8h-3"/><path d="M7 14h10v7H7z"/></svg>
+        <span class="label">인쇄·PDF</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" aria-labelledby="name">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">이력서 · 포트폴리오</p>
+        <h1 class="name" id="name">조성범 <span class="name-en" lang="en">Cho Sungbum</span></h1>
+        <p class="thesis">건축을 아는 개발자.<br>BIM 자동화와 AI 에이전트를 함께 만듭니다.</p>
+        <p class="intro">지금은 건축설계사무소에서 사내 AI 도입 실무를 합니다. C#/.NET으로 Tekla·MIDAS·Grasshopper 플러그인을 개발했고, 딥러닝 영상 모델을 경량화해 스마트폰에 배포했습니다.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/funnyjoe0317">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/></svg>
+            <span class="mono">github.com/<wbr>funnyjoe0317</span>
+          </a>
+          <a class="btn" href="mailto:funnyjoe0317@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg>
+            <span class="mono">funnyjoe0317<wbr>@gmail.com</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="titleblock" role="group" aria-label="경력 요약">
+        <div class="tb-caption"><span>경력 요약</span><span>REV. 2026.11.14</span></div>
+        <dl class="tb">
+          <div><dt>현재 소속</dt><dd>삼우종합건축사사무소<small>AX부문 · AI 기술개발 · 2026.08 ~</small></dd></div>
+          <div><dt>개발 경력</dt><dd>약 3년<small>KETI 1년 3개월 · 시드소프트 약 1년 5개월 · 삼우 3개월</small></dd></div>
+          <div><dt>주력 기술</dt><dd>C#/.NET · Python · MCP</dd></div>
+          <div><dt>전공</dt><dd>한양대학교 건축공학과</dd></div>
+          <div><dt>대표작</dt><dd><a href="#bimharness">BIMHarness</a><small>자연어 룰 BIM 검증 에이전트 · GitHub 공개(MIT)</small></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="strengths" aria-labelledby="h-strengths">
+    <div class="wrap">
+      <div class="view-title">
+        <h2 id="h-strengths">핵심 역량</h2>
+        <span class="view-en">Strengths</span>
+      </div>
+      <div class="strengths">
+        <article class="strength">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V4l8-2v19"/><path d="M13 8h6v13"/><path d="M8 7h2M8 11h2M8 15h2M16 12h1M16 16h1"/></svg>
+          <h3>건축 도메인</h3>
+          <p>한양대학교 건축공학과를 졸업하고 부동산 개발·시행(사업성 검토·인허가·PF)을 했습니다. 지금은 건축설계사무소에서 일합니다.</p>
+          <a class="more" href="#exp-hanho">경력 보기</a>
+        </article>
+        <article class="strength">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M4 3.5h16v3h-6.2v11H20v3H4v-3h6.2v-11H4z"/></svg>
+          <h3>BIM 자동화</h3>
+          <p>Tekla·MIDAS·Grasshopper API로 C#/.NET 플러그인을 약 1년 5개월 개발했습니다. 교량 거더 설계 파라미터 약 170개 입력 UI, Grasshopper–MIDAS 컴포넌트·기능 약 40개.</p>
+          <a class="more" href="#seed-projects">프로젝트 보기</a>
+        </article>
+        <article class="strength">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.2 8.2l3.6 7.6M16.8 8.2l-3.6 7.6"/></svg>
+          <h3>AI 에이전트 · MCP</h3>
+          <p>자연어 룰로 BIM 모델을 검증하는 에이전트를 만들어 공개했습니다. 기본 파이프라인에서는 LLM이 규칙 해석만 맡고 판정·수정은 코드가 합니다. 지금은 사내 MCP 서비스를 검증하고 배포합니다.</p>
+          <a class="more" href="#bimharness">BIMHarness 보기</a>
+        </article>
+        <article class="strength">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><rect x="9" y="7" width="6" height="6" rx="1"/><path d="M11 18h2"/></svg>
+          <h3>온디바이스 AI</h3>
+          <p>레이어별 추론 시간을 기기에서 프로파일링해 영상 모델을 경량화하고, Int8 모델 추론 시간을 20.71초에서 2.38초로 줄였습니다(FHD, 8.7배). 갤럭시·아이폰 배포, 제1저자 논문과 특허 출원.</p>
+          <a class="more" href="#keti-projects">KETI 프로젝트 보기</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience" aria-labelledby="h-experience">
+    <div class="wrap">
+      <div class="view-title">
+        <h2 id="h-experience">경력</h2>
+        <span class="view-en">Experience</span>
+        <span class="view-note">치수선 길이 = 재직 기간 · 2026.11 기준</span>
+      </div>
+      <ol class="timeline">
+        <li class="job" id="exp-samoo">
+          <div>
+            <p class="when">2026.08 – 현재</p>
+            <div class="dim open" style="--m: 3.4"><i aria-hidden="true"></i><span>3개월 · 재직 중</span></div>
+          </div>
+          <div class="job-body">
+            <header>
+              <h3>삼우종합건축사사무소 <span class="org-en" lang="en">SAMOO</span></h3>
+              <p class="role">AX부문 · AI 기술개발</p>
+            </header>
+            <p class="summary">건축설계사무소의 사내 AI 도입 실무를 합니다. MCP 서비스를 사내 서버에 올리고 온프레미스 LLM 환경을 준비하며, 외부 AI 도구를 검증하고 임직원의 AI 활용을 지원합니다. 구현은 AI 코딩 에이전트(Claude Code·Codex)로 하고, 범위 결정·시험·배포·보안 판단은 직접 합니다.</p>
+            <ul class="bullets">
+              <li><b>AutoCAD·Revit MCP</b> 기능별 동작 검증 <span class="nb"><span class="chip ok">1차 완료</span>,</span> 사내 서버 이관 <span class="chip wip">진행 중</span></li>
+              <li><b>건축 법규 MCP</b> 주소 → 필지번호(PNU) → 서울 지구단위계획 판정 → 법령 원문으로 이어지는 MCP들입니다. 법령 MCP와 주소·건축물 정보 MCP의 답변은 실제 건축 업무 질문으로 검증했습니다. 상태: 법령 MCP <span class="nb"><span class="chip run">운영 중</span>,</span> 지구단위계획 MCP <span class="nb"><span class="chip ok">운영 준비 완료</span>,</span> 주소·건축물 정보 MCP 개선판 <span class="chip wip">배포 대기</span></li>
+              <li><b>ACC 도면 변경 추적 MCP</b> 'CAD를 켜지 않고 변경 확인'을 목표로 요소 단위 버전 비교 도구를 추가했습니다(구현은 AI). <span class="chip run">사용 중</span></li>
+              <li><b>폐쇄망 에이전트 환경</b> 추론은 사내 GPU 서버, 실행은 PC, 승인은 사람이 하는 구조로 Claude Code를 오픈 LLM에 연결하고 있습니다. <span class="chip wip">진행 중</span></li>
+              <li><b>사내 AI 확산</b> AI 세미나·미션 챌린지 운영 실무를 맡았고, 비개발자가 만든 앱을 사내 플랫폼으로 옮기도록 지원합니다.</li>
+            </ul>
+            <ul class="tags" aria-label="사용 기술">
+              <li>MCP</li><li>Claude Code</li><li>Codex</li><li>Docker</li><li>Rocky Linux</li><li>Python</li><li>Autodesk APS</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job" id="exp-sidd">
+          <div>
+            <p class="when">2025.02 – 2026.07</p>
+            <div class="dim" style="--m: 17"><i aria-hidden="true"></i><span>약 1년 5개월</span></div>
+          </div>
+          <div class="job-body">
+            <header>
+              <h3>시드소프트 <span class="org-en" lang="en">SIDDSoft</span></h3>
+              <p class="role">BIM 플러그인 개발 · C#/.NET</p>
+            </header>
+            <p class="summary">건설 BIM 소프트웨어(Tekla Structures · MIDAS Gen/Civil · Grasshopper)와 연동하는 플러그인과 자동화 도구를 C#/.NET으로 개발했습니다.</p>
+            <ul class="proj-links" aria-label="이 회사에서 한 프로젝트">
+              <li><a href="#p-midas">Grasshopper–MIDAS 연동</a></li>
+              <li><a href="#p-pc">PC 부재 설계·BOM</a></li>
+              <li><a href="#p-tekla">Grasshopper–Tekla 연동</a></li>
+              <li><a href="#p-ipc">교량 거더 Tekla 플러그인</a></li>
+              <li><a href="#p-esafe">내진 성능 분석 MIDAS 연동</a></li>
+            </ul>
+            <ul class="tags" aria-label="사용 기술">
+              <li>C#</li><li>.NET 4.8</li><li>WinForms</li><li>WPF</li><li>Tekla Open API</li><li>MIDAS REST API</li><li>Grasshopper SDK</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job" id="exp-keti">
+          <div>
+            <p class="when">2023.05 – 2024.08</p>
+            <div class="dim" style="--m: 15"><i aria-hidden="true"></i><span>1년 3개월</span></div>
+          </div>
+          <div class="job-body">
+            <header>
+              <h3>한국전자기술연구원 <span class="org-en" lang="en">KETI</span></h3>
+              <p class="role">연구원 · 딥러닝 경량화·모바일 배포</p>
+            </header>
+            <p class="summary">수중 영상 개선 모델은 경량화해 갤럭시(SNPE)·아이폰(CoreML)에, 수중 생물 인식 모델은 TFLite로 바꿔 스마트폰에 배포했습니다. NVIDIA PyTorch·TensorFlow Docker 이미지를 바탕으로 Linux 학습 환경을 직접 구성했습니다.</p>
+            <ul class="proj-links" aria-label="이 회사에서 한 프로젝트">
+              <li><a href="#p-enhance">수중 영상 개선</a></li>
+              <li><a href="#p-detect">수중 생물 인식</a></li>
+            </ul>
+            <ul class="tags" aria-label="사용 기술">
+              <li>Python</li><li>PyTorch</li><li>TensorFlow</li><li>TFLite</li><li>SNPE</li><li>CoreML</li><li>Docker</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job" id="exp-hanho">
+          <div>
+            <p class="when">2021.02 – 2022.04</p>
+            <div class="dim" style="--m: 14"><i aria-hidden="true"></i><span>약 1년 2개월</span></div>
+          </div>
+          <div class="job-body">
+            <header>
+              <h3>한호건설(주)</h3>
+              <p class="role">사업개발 · 부동산 개발·시행</p>
+            </header>
+            <p class="summary">신규 개발사업 발굴과 사업부지 매입, 인허가와 사후 관리, 사업기획·사업성 검토, PF 금융 업무를 맡았습니다.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="h-projects">
+    <div class="wrap stack">
+      <div class="view-title">
+        <h2 id="h-projects">프로젝트</h2>
+        <span class="view-en">Projects</span>
+        <span class="view-note">개인 1 · 업무 7 · 기타 2</span>
+      </div>
+
+      <article class="feature" id="bimharness" aria-labelledby="h-bim">
+        <header>
+          <p class="meta"><span>2026.05 – 2026.06</span><span>개인 프로젝트</span><span>오픈소스 · MIT</span></p>
+          <h3 id="h-bim">BIMHarness</h3>
+          <p class="feature-sub">자연어로 쓴 룰로 IFC 모델을 검증하고 고치고 한국어 보고서까지 만드는 BIM 멀티 에이전트</p>
+        </header>
+
+        <ol class="pipeline" aria-label="기본 파이프라인 5단계">
+          <li class="step"><div class="step-head"><span class="step-no">1</span><b>Parser</b><em class="step-tag">코드</em></div><span class="step-desc">IFC 파일 읽기</span><code>.ifc</code></li>
+          <li class="step llm"><div class="step-head"><span class="step-no">2</span><b>Interpreter</b><em class="step-tag">LLM</em></div><span class="step-desc">자연어 룰을 JSON 규칙으로 컴파일</span><code>rules.md → rules_<wbr>compiled.json</code></li>
+          <li class="step"><div class="step-head"><span class="step-no">3</span><b>Validator</b><em class="step-tag">코드</em></div><span class="step-desc">규칙 위반 판정</span><code>violations.json</code></li>
+          <li class="step"><div class="step-head"><span class="step-no">4</span><b>AutoFix</b><em class="step-tag">코드</em></div><span class="step-desc">화이트리스트 4종만 자동 수정</span><code>*_fixed.ifc · changes.log.json</code></li>
+          <li class="step"><div class="step-head"><span class="step-no">5</span><b>Reporter</b><em class="step-tag">코드</em></div><span class="step-desc">한국어 보고서</span><code>report.md</code></li>
+        </ol>
+        <p class="pipeline-note">기본 파이프라인에서 LLM은 2단계(룰 해석)에만 쓰고, 판정·수정·보고는 결정론적 Python 코드가 합니다. 1단계(IFC)와 2단계(규칙)의 결과를 3단계가 함께 받습니다.</p>
+
+        <div class="feature-body">
+          <ul class="bullets">
+            <li><b>LLM은 규칙 해석만(기본 파이프라인).</b> LLM(Claude Sonnet 4.6 또는 로컬 Ollama)은 자연어 룰을 JSON 규칙으로 컴파일만 하고, 위반 판정과 자동 수정은 Python(ifcopenshell) 코드가 합니다. 오탐을 피하려고 면적을 잴 수 없는 경우(값 없음·0)는 위반으로 보지 않습니다.</li>
+            <li><b>자동 수정은 화이트리스트 4종만(기본 파이프라인).</b> <code>pset_set_value</code> <code>set_attribute</code> <code>material_change</code> <code>geometry_change</code>만 자동으로 고치고, 요소 추가·삭제 같은 수정은 보고서의 '수동 검토 필요'로 넘깁니다. 수정 전 원본을 백업하고 원본·수정본 SHA-256 해시와 변경 내역을 <code>changes.log.json</code>에 남깁니다.</li>
+            <li><b>MCP 서버.</b> 도구 9개를 MCP로 열어 Claude Desktop에서 자연어로 검증·수정·보고서 생성을 부릅니다.</li>
+            <li><b>AI Agent 모드 2종(별도 구현).</b> Claude가 판정과 수정을 직접 정하는 1회 일괄형과, Tool Use를 반복 호출하는 ReAct형(벽 대상 도구 6개)입니다. 이 두 모드는 화이트리스트와 해시 기록을 거치지 않습니다.</li>
+            <li><b>룰셋 4종 35개(데모용 자체 작성).</b> 한국 건축법 8 · 화재 안전 11 · MIDAS 호환 8 · Revit Import 8. 룰마다 대상·조건·수정 방법을 자연어 .md 템플릿으로 적습니다.</li>
+            <li><b>온프레미스 실행.</b> 기본 파이프라인을 명령줄로 돌리면서 룰 컴파일 백엔드를 로컬 Ollama로 바꾸면 IFC와 룰이 사내망 밖으로 나가지 않습니다. MCP로 부르면 도구 결과가 연결된 AI 클라이언트로 가고, AI Agent 모드는 Claude API 전용입니다. 컴파일 결과를 캐시해(<code>--skip-compile</code>) API 호출을 줄입니다.</li>
+          </ul>
+          <div class="feature-side">
+            <dl class="figures">
+              <div><dt>에이전트</dt><dd>5</dd></div>
+              <div><dt>MCP 도구</dt><dd>9</dd></div>
+              <div><dt>룰</dt><dd>35</dd></div>
+              <div><dt>자동 수정 종류</dt><dd>4</dd></div>
+            </dl>
+            <p class="tool-list">MCP 도구: <code>list_rules</code> · <code>compile_rules</code> · <code>check_ollama</code> · <code>validate_ifc</code> · <code>apply_fixes</code> · <code>generate_report</code> · <code>run_full_pipeline</code> · <code>ai_agent_mode</code> · <code>ai_react_agent</code></p>
+          </div>
+        </div>
+
+        <footer class="feature-foot">
+          <ul class="tags" aria-label="사용 기술">
+            <li>Python 3.12</li><li>Claude API · Tool Use</li><li>Ollama</li><li>MCP</li><li>ifcopenshell</li><li>IFC2X3</li><li>pytest</li>
+          </ul>
+          <a class="btn btn-primary" href="https://github.com/funnyjoe0317/BIMHarness">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/></svg>
+            <span class="mono">github.com/<wbr>funnyjoe0317/<wbr>BIMHarness</span>
+          </a>
+        </footer>
+      </article>
+
+      <h3 class="group-title" id="seed-projects">시드소프트 · BIM 플러그인 <span>2025.02 – 2026.07 · C#/.NET</span></h3>
+      <div class="cards">
+        <article class="card card-wide" id="p-midas">
+          <div class="card-text">
+            <p class="meta"><span>2025.04 – 2026.07</span><span>핵심 개발</span></p>
+            <h4>Grasshopper–MIDAS 구조해석 연동 플러그인</h4>
+            <p class="sub">Grasshopper에서 MIDAS Gen/Civil 모델을 만들고, 고치고, 해석하는 플러그인</p>
+            <ul class="bullets">
+              <li>팀 공통 컴포넌트 구조 위에서 컴포넌트·기능 약 40개 구현 (v3.0 → v3.4)</li>
+              <li>PSC 단면 7개, 하중 5개(풍하중·지진하중·Pressure Profile·지진/정지 토압), Story 8개, 해석 결과 출력 5개</li>
+              <li>MIDAS API 매뉴얼에 맞춰 RS Function(설계기준 5개: IBC2012·Eurocode·대만·한국·AASHTO)과 차량하중(규격 7개) 컴포넌트 구현</li>
+              <li>CIVIL/GEN 제품별 컴포넌트 노출 분리: 공통 베이스 클래스에 제품 구분 속성을 넣고 전체 컴포넌트를 제품별로 재배치</li>
+            </ul>
+            <div class="card-foot">
+              <ul class="tags" aria-label="사용 기술"><li>C#</li><li>.NET 4.8</li><li>Grasshopper SDK</li><li>RhinoCommon</li><li>MIDAS REST API</li><li>Newtonsoft.Json</li></ul>
+            </div>
+          </div>
+          <figure>
+            <a href="assets/midas-grasshopper.jpg"><img src="assets/midas-grasshopper.jpg" width="1200" height="485" decoding="async" alt="Grasshopper 캔버스에 MIDAS 모델 생성, 해석, 결과 컴포넌트가 선으로 연결된 화면"></a>
+            <figcaption>Grasshopper 캔버스에서 모델 생성 → 해석 → 결과(층변위·층전단력 등) 컴포넌트를 연결한 화면</figcaption>
+          </figure>
+        </article>
+
+        <article class="card" id="p-pc">
+          <p class="meta"><span>2026.01 – 2026.07</span><span>주도 개발</span></p>
+          <h4>PC(프리캐스트 콘크리트) 부재 설계·BOM 시스템</h4>
+          <p class="sub">기둥·보·거더·브라켓·슬래브를 설계하고 3D로 확인하며 철근 배근과 물량(BOM)을 산출하는 데스크톱 앱</p>
+          <ul class="bullets">
+            <li>옵션 → 형상 → 3D → 철근 → DB → BOM 파이프라인(Builder 패턴)과 Eyeshot 실시간 3D 뷰어</li>
+            <li>광폭보 시스템 단독 개발, 포켓보·거더 턱, 브라켓 4/3/2/1면 분기 로직</li>
+            <li>슬래브 4종(HalfSlab·HCS·DTS·KSU) 카탈로그·UI와 Slab Builder 통합, Ubar·레티스·용접철망 철근</li>
+            <li>여러 부재를 묶어 Excel BOM 출력, 입력 항목을 고르면 해당 철근을 뷰어에서 강조</li>
+            <li>.NET 4.6 → 4.8 이전, XML 직렬화로 프로젝트 저장·불러오기</li>
+          </ul>
+          <dl class="results">
+            <div><dt>검증</dt><dd>용접철망·직선 철근 개수를 Tekla와 대조해 맞춤</dd></div>
+          </dl>
+          <div class="card-foot">
+            <ul class="tags" aria-label="사용 기술"><li>C#</li><li>WinForms</li><li>Eyeshot 2020</li><li>Syncfusion</li><li>SpreadsheetGear</li></ul>
+            <a class="ext-link" href="https://youtu.be/umiXdwr2WIE">시연 영상</a>
+          </div>
+        </article>
+
+        <article class="card" id="p-tekla">
+          <p class="meta"><span>2025.05 – 2025.07</span><span>컴포넌트 개발</span></p>
+          <h4>Grasshopper–Tekla 연동 상용 플러그인</h4>
+          <p class="sub">Grasshopper에서 Tekla Structures 모델과 도면을 직접 다루는 상용 BIM 플러그인</p>
+          <ul class="bullets">
+            <li>Tekla Drawing API로 도면 마크 생성·수정·이동 4종(텍스트·사용자 정의 요소, 프레임 9종 스타일)</li>
+            <li>BFS 기반 타설 경계(PourBreak) 컴포넌트: 포인트 트리를 FacetedBrep으로 바꾸고 허용오차 기반 공간 해시 비교기를 직접 구현</li>
+            <li><code>GH_Goo&lt;T&gt;</code>를 확장해 Tekla 도면 객체용 커스텀 데이터 타입 2종 설계</li>
+          </ul>
+          <dl class="results">
+            <div><dt>결과</dt><dd>상용 출시</dd></div>
+          </dl>
+          <div class="card-foot">
+            <ul class="tags" aria-label="사용 기술"><li>C#</li><li>.NET 4.8</li><li>WPF</li><li>Tekla Open API</li><li>Grasshopper SDK</li></ul>
+          </div>
+        </article>
+
+        <article class="card" id="p-ipc">
+          <p class="meta"><span>2026.04 – 2026.07</span><span>단독 개발</span><span>발주처 SI</span></p>
+          <h4>교량 거더 설계 모델 자동화 Tekla 플러그인</h4>
+          <p class="sub">IPC 거더 교량의 설계 모델을 만드는 Tekla Structures 플러그인</p>
+          <ul class="bullets">
+            <li>설계 파라미터 약 170개를 8개 탭 입력 UI로 구성(정면도·평면도·단면 A~F·중앙·2차 정착구)</li>
+            <li>CAD 좌표 기반 단면 폴리곤(단면당 12~16점)으로 IPC 거더 형상 생성</li>
+            <li>변단면 구현 방법을 찾으려 ContourPlate, BooleanCut + LoftedPlate, 부재 분할, OBLVAR_C 네 방식을 실험한 뒤 적용할 수 있는 방법을 채택</li>
+            <li>정면도 PDF 변환</li>
+          </ul>
+          <div class="card-foot">
+            <ul class="tags" aria-label="사용 기술"><li>C#</li><li>.NET 4.8</li><li>WinForms</li><li>Tekla Structures 2024 Open API</li></ul>
+          </div>
+        </article>
+
+        <article class="card" id="p-esafe">
+          <p class="meta"><span>2026.03 – 2026.04</span><span>정부 과제 지원</span></p>
+          <h4>내진 성능 분석용 MIDAS Gen API 연동 모듈</h4>
+          <p class="sub">지진 성능 예측 과제(2025~2029)에서 MIDAS Gen 모델을 자동으로 만들고 해석 결과를 모으는 도구</p>
+          <ul class="bullets">
+            <li>MIDAS GEN REST API 연동 자동화</li>
+            <li>H형강 단면 스펙 파라메트릭 파싱</li>
+            <li>해석 실행 후 변위·부재력·반력·요약 결과를 CSV로 나눠 저장</li>
+          </ul>
+          <div class="card-foot">
+            <ul class="tags" aria-label="사용 기술"><li>C#</li><li>.NET 4.8</li><li>WinForms</li><li>MIDAS GEN REST API</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="group-title" id="keti-projects">한국전자기술연구원 · 온디바이스 AI <span>2023.05 – 2024.08</span></h3>
+      <div class="cards">
+        <article class="card card-wide" id="p-enhance">
+          <div class="card-text">
+            <p class="meta"><span>2023 – 2024</span><span>연구원</span></p>
+            <h4>수중 영상 개선 경량 네트워크</h4>
+            <p class="sub">수중 촬영 영상의 흐림·부유물·색 문제를 줄이고 스마트폰에서 동작하도록 만든 경량 네트워크</p>
+            <ul class="bullets">
+              <li>디블러·노이즈/부유물 제거·색상 보정·초해상도 4종 네트워크 개발(NAFNet 계열 경량화)</li>
+              <li>기기에서 레이어별 추론 시간을 프로파일링해 양자화·최적화에 맞는 레이어로 교체</li>
+              <li>PyTorch → TensorFlow 학습 환경 전환(같은 성능 확인), 양자화 인식 학습(QAT), TFLite 변환</li>
+              <li>갤럭시(SNPE)·아이폰(CoreML) 배포, 모델 보호를 위해 C++ .so 라이브러리와 API로 패키징(Makefile)</li>
+            </ul>
+            <div class="card-foot">
+              <ul class="tags" aria-label="사용 기술"><li>Python</li><li>PyTorch</li><li>TensorFlow</li><li>TFLite</li><li>SNPE</li><li>CoreML</li><li>C++</li></ul>
+              <a class="ext-link" href="https://youtube.com/shorts/NX9lk-MpOls">시연 영상</a>
+            </div>
+          </div>
+          <div class="card-side">
+            <figure>
+              <a href="assets/underwater-enhance.jpg"><img src="assets/underwater-enhance.jpg" width="1184" height="556" decoding="async" alt="블러 제거, 부유물 제거, 색상 개선, 업스케일 네 가지 처리의 전후 비교 이미지"></a>
+              <figcaption>개선 4종의 전후 예시: 블러 제거 · 부유물 제거 · 색상 개선 · 업스케일(초해상도)</figcaption>
+            </figure>
+            <dl class="results">
+              <div><dt>Int8 추론 시간 (FHD)</dt><dd>20.71초 → 2.38초<small>8.7배</small></dd></div>
+              <div><dt>디블러 · 갤럭시 S23 (SNPE, int8)</dt><dd>PSNR 30.26dB · 0.05초</dd></div>
+              <div><dt>디블러 · iPhone 14 Pro Max (CoreML, fp16)</dt><dd>PSNR 30.18dB · 0.15초</dd></div>
+              <div><dt>특허</dt><dd>출원 10-2023-0189364</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="card card-wide" id="p-detect">
+          <div class="card-text">
+            <p class="meta"><span>2023 – 2024</span><span>연구원</span></p>
+            <h4>수중 생물 인식 (온디바이스 객체 인식)</h4>
+            <p class="sub">스마트폰 카메라로 수중 생물을 인식하는 모바일 시스템</p>
+            <ul class="bullets">
+              <li>외부에서 받은 41종 30,647장 이미지를 정제(미검출 데이터 제거)하고 학습/검증으로 분할, 클래스 불균형 분석</li>
+              <li>YOLOv6·v8을 학습·비교하고, 논문 시점에는 라이선스를 고려해 YOLOv6 채택</li>
+              <li>PyTorch 가중치를 TensorFlow 모델로 옮겨 TFLite 기반 모바일 시스템 개발</li>
+            </ul>
+            <div class="card-foot">
+              <ul class="tags" aria-label="사용 기술"><li>Python</li><li>PyTorch</li><li>TensorFlow Lite</li><li>YOLOv6·v8</li></ul>
+              <a class="ext-link" href="https://youtu.be/LDc84wqe7bI">시연 영상</a>
+            </div>
+          </div>
+          <div class="card-side">
+            <dl class="results">
+              <div><dt>정확도</dt><dd>mAP 0.6</dd></div>
+              <div><dt>모바일 처리 속도</dt><dd>30FPS 이상</dd></div>
+              <div><dt>논문</dt><dd>제1저자 (2024.06)</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="group-title">기타</h3>
+      <ul class="rows">
+        <li>
+          <p class="when">2023.02 – 2023.04 · 외주</p>
+          <div><b>바른생각 앱 서버 · 정자 분석 프로그램</b><p>AWS 서버와 REST API를 만들고, YOLOv5와 OpenCV(blob detection)로 정자 개수·이동거리·운동성을 분석했습니다. 앱 출시.</p></div>
+        </li>
+        <li>
+          <p class="when">대학</p>
+          <div><b>건축물 AR 앱</b><p>Unity로 건축물 3D 모델을 만들고 Vuforia로 설계 도면을 인식해, 설계한 건물을 실제 크기 AR로 확인하게 했습니다.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="h-skills">
+    <div class="wrap">
+      <div class="view-title">
+        <h2 id="h-skills">기술</h2>
+        <span class="view-en">Skills</span>
+        <span class="view-note">
+          <span class="legend-item"><i class="lv lv3" aria-hidden="true"></i>주력</span>
+          <span class="legend-item"><i class="lv lv2" aria-hidden="true"></i>사용</span>
+          <span class="legend-item"><i class="lv" aria-hidden="true"></i>경험</span>
+        </span>
+      </div>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>BIM · 건설 SW</h3>
+          <ul>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>Tekla Structures Open API</span></li>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>MIDAS Gen/Civil REST API</span></li>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>Grasshopper SDK · RhinoCommon</span></li>
+            <li><i class="lv lv2" aria-hidden="true"></i><span><span class="sr">사용: </span>Eyeshot 3D</span></li>
+            <li><i class="lv lv2" aria-hidden="true"></i><span><span class="sr">사용: </span>IFC2X3 · ifcopenshell</span></li>
+            <li><i class="lv" aria-hidden="true"></i><span><span class="sr">경험: </span>Revit API (개인 프로젝트)</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>언어 · 데스크톱</h3>
+          <ul>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>C# · .NET Framework 4.6/4.8</span></li>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>WinForms · WPF</span></li>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>Python</span></li>
+            <li><i class="lv lv2" aria-hidden="true"></i><span><span class="sr">사용: </span>C++</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI 에이전트 · LLM</h3>
+          <ul>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>MCP 서버</span></li>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>Claude API · Tool Use · ReAct</span></li>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>AI 코딩 에이전트 운영 (Claude Code · Codex)</span></li>
+            <li><i class="lv lv2" aria-hidden="true"></i><span><span class="sr">사용: </span>Ollama (로컬 LLM)</span></li>
+            <li><i class="lv" aria-hidden="true"></i><span><span class="sr">경험: </span>LangChain · LangGraph (학습 중)</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>딥러닝 · 온디바이스</h3>
+          <ul>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>PyTorch · TensorFlow · TFLite</span></li>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>양자화(QAT) · 레이어 프로파일링</span></li>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>SNPE · CoreML</span></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>인프라 · 도구</h3>
+          <ul>
+            <li><i class="lv lv3" aria-hidden="true"></i><span><span class="sr">주력: </span>Docker · Linux · Git</span></li>
+            <li><i class="lv lv2" aria-hidden="true"></i><span><span class="sr">사용: </span>온프레미스 배포 (Docker · Rocky Linux)</span></li>
+            <li><i class="lv" aria-hidden="true"></i><span><span class="sr">경험: </span>AWS (EC2 · S3)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publications" aria-labelledby="h-publications">
+    <div class="wrap">
+      <div class="view-title">
+        <h2 id="h-publications">논문 · 특허</h2>
+        <span class="view-en">Papers &amp; Patent Application</span>
+        <span class="view-note">논문 2 · 특허 출원 1</span>
+      </div>
+      <ul class="pubs">
+        <li>
+          <span class="pub-kind">논문 · 제1저자</span>
+          <p class="pub-title">온디바이스 AI 기반 수중 생물 인식 기술</p>
+          <p class="pub-venue">2024 한국방송·미디어공학회 하계학술대회 · 2024.06</p>
+        </li>
+        <li>
+          <span class="pub-kind">논문 · 공동저자</span>
+          <p class="pub-title">대조 학습 기반 심층 감독 기법을 이용한 단일 영상 초해상도 모델 경량화 기법</p>
+          <p class="pub-venue">2023 한국방송·미디어공학회 하계학술대회 · 2023.06</p>
+        </li>
+        <li>
+          <span class="pub-kind">특허 출원</span>
+          <p class="pub-title">수중 영상 색상 보정 관련 특허</p>
+          <p class="pub-venue">출원번호 10-2023-0189364 · 2023</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="education" aria-labelledby="h-education">
+    <div class="wrap">
+      <div class="view-title">
+        <h2 id="h-education">학력 · 교육</h2>
+        <span class="view-en">Education</span>
+      </div>
+      <ul class="rows">
+        <li>
+          <p class="when">2014.03 – 2021.02</p>
+          <div><b>한양대학교 건축공학과</b><p>졸업</p></div>
+        </li>
+        <li>
+          <p class="when">2022.08 – 2022.12</p>
+          <div><b>SW사관학교 정글 (KAIST)</b><p>수료 · 전산학 기초, Pintos OS 프로젝트, 알고리즘·자료구조</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-grid">
+    <div>
+      <h2>연락</h2>
+      <p>채용·협업 문의는 메일로 부탁드립니다.</p>
+    </div>
+    <dl class="contact">
+      <div>
+        <dt>이메일</dt>
+        <dd><a href="mailto:funnyjoe0317@gmail.com" id="emailText">funnyjoe0317@gmail.com</a><button class="copy-btn" type="button" data-copy="funnyjoe0317@gmail.com" data-copy-target="emailText">복사</button></dd>
+      </div>
+      <div>
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/funnyjoe0317">github.com/funnyjoe0317</a></dd>
+      </div>
+    </dl>
+    <p class="colophon">최종 수정 2026.11.14</p>
+    <p class="sr" role="status" aria-live="polite" id="copyStatus"></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var themeBtn = document.getElementById('themeBtn');
+  var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    if (t === 'dark') return true;
+    if (t === 'light') return false;
+    return !!(mq && mq.matches);
+  }
+  function syncThemeBtn() {
+    themeBtn.setAttribute('aria-pressed', String(isDark()));
+    var bg = getComputedStyle(root).getPropertyValue('--bg').trim();
+    if (bg) {
+      Array.prototype.forEach.call(document.querySelectorAll('meta[name="theme-color"]'), function (m) { m.setAttribute('content', bg); });
+    }
+  }
+  themeBtn.addEventListener('click', function () {
+    var next = isDark() ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    syncThemeBtn();
+  });
+  if (mq && mq.addEventListener) mq.addEventListener('change', syncThemeBtn);
+  syncThemeBtn();
+
+  var printBtn = document.getElementById('printBtn');
+  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+
+  function selectText(el) {
+    var range = document.createRange();
+    range.selectNodeContents(el);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+  var copyStatus = document.getElementById('copyStatus');
+  Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function (btn) {
+    var original = btn.textContent;
+    function show(msg) {
+      btn.textContent = msg;
+      if (copyStatus) { copyStatus.textContent = ''; setTimeout(function () { copyStatus.textContent = msg; }, 50); }
+      setTimeout(function () { btn.textContent = original; }, 1600);
+    }
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      var target = document.getElementById(btn.getAttribute('data-copy-target'));
+      function fallback() {
+        var ok = false;
+        if (target) {
+          selectText(target);
+          try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        }
+        show(ok ? '복사했어요' : '주소를 선택했어요');
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { show('복사했어요'); }, fallback);
+      } else {
+        fallback();
+      }
+    });
+  });
+
+  // 지금 보고 있는 섹션을 상단 메뉴에 표시. 맨 아래에 닿으면 '연락'
+  // (메뉴로 고른 섹션이 화면 안에 보이면 그 섹션). 휴대폰에서는 표시된 메뉴가 보이도록 메뉴를 옆으로 넘긴다.
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  var byId = {};
+  links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+  var sections = ['top'].concat(Object.keys(byId))
+    .map(function (id) { return document.getElementById(id); })
+    .filter(Boolean);
+  var nav = document.querySelector('.nav');
+  var picked = null;
+  links.forEach(function (a) { a.addEventListener('click', function () { picked = a.getAttribute('href').slice(1); }); });
+  ['wheel', 'touchstart', 'keydown'].forEach(function (t) { window.addEventListener(t, function () { picked = null; }, { passive: true }); });
+  var lastActive;
+  function setActive(a) {
+    if (a === lastActive) return;
+    lastActive = a;
+    links.forEach(function (l) { if (l !== a) { l.classList.remove('active'); l.removeAttribute('aria-current'); } });
+    if (!a) return;
+    a.classList.add('active');
+    a.setAttribute('aria-current', 'true');
+    if (nav) {
+      var nr = nav.getBoundingClientRect(), ar = a.getBoundingClientRect();
+      if (ar.left < nr.left || ar.right > nr.right) nav.scrollLeft += ar.left - nr.left - (nr.width - ar.width) / 2;
+    }
+  }
+  function updateActive() {
+    var doc = document.documentElement;
+    if (window.innerHeight + window.scrollY >= doc.scrollHeight - 2) {
+      var p = picked && document.getElementById(picked);
+      var pt = p ? p.getBoundingClientRect().top : -1;
+      setActive(pt >= 0 && pt < window.innerHeight ? byId[picked] : (byId.contact || null));
+      return;
+    }
+    var line = window.innerHeight * 0.38;
+    var current = null;
+    sections.forEach(function (s) { if (s.getBoundingClientRect().top <= line) current = s; });
+    setActive(current ? (byId[current.id] || null) : null);
+  }
+  window.addEventListener('scroll', updateActive, { passive: true });
+  window.addEventListener('resize', updateActive);
+  window.addEventListener('hashchange', updateActive);
+  updateActive();
+})();
+</script>
+</body>
+</html>
